@@ -3,11 +3,11 @@ kind: Service
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app":"nginx","example-webhook-enabled":"true"},"name":"nginx-service","namespace":"default"},"spec":{"ports":[{"name":"http","port":800,"protocol":"TCP","targetPort":30}],"selector":{"app":"nginx"}}}
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app":"nginx","example-webhook-enabled":"true"},"name":"nginx-service","namespace":"default"},"spec":{"ports":[{"name":"http","port":600,"protocol":"TCP","targetPort":30}],"selector":{"app":"nginx"}}}
   creationTimestamp: "2024-01-30T10:55:22Z"
   labels:
     app: nginx
-    author: gopesh
+    author: minikube-user
     example-webhook-enabled: "true"
     operation: UPDATE
   name: nginx-service
@@ -22,7 +22,7 @@ spec:
   ipFamilyPolicy: SingleStack
   ports:
   - name: http
-    port: 800
+    port: 600
     protocol: TCP
     targetPort: 30
   selector:
