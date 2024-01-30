@@ -3,11 +3,11 @@ kind: Service
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app":"nano","example-webhook-enabled":"true"},"name":"service-nano","namespace":"default"},"spec":{"ports":[{"name":"http","port":900,"protocol":"TCP","targetPort":50}],"selector":{"app":"nano"}}}
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app":"nano","example-webhook-enabled":"true"},"name":"service-nano","namespace":"default"},"spec":{"ports":[{"name":"http","port":700,"protocol":"TCP","targetPort":50}],"selector":{"app":"nano"}}}
   creationTimestamp: "2024-01-30T10:35:01Z"
   labels:
     app: nano
-    author: minikube-user
+    author: gopesh
     example-webhook-enabled: "true"
     operation: UPDATE
   name: service-nano
@@ -22,7 +22,7 @@ spec:
   ipFamilyPolicy: SingleStack
   ports:
   - name: http
-    port: 900
+    port: 700
     protocol: TCP
     targetPort: 50
   selector:
