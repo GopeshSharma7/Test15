@@ -3,7 +3,7 @@ kind: Service
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app":"nginx","example-webhook-enabled":"true"},"name":"nginx-service-test","namespace":"default"},"spec":{"ports":[{"name":"http","port":600,"protocol":"TCP","targetPort":30}],"selector":{"app":"nginx"}}}
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app":"nginx","example-webhook-enabled":"true"},"name":"nginx-service-test","namespace":"default"},"spec":{"ports":[{"name":"http","port":800,"protocol":"TCP","targetPort":30}],"selector":{"app":"nginx"}}}
   creationTimestamp: "2024-01-31T05:44:08Z"
   labels:
     app: nginx
@@ -22,7 +22,7 @@ spec:
   ipFamilyPolicy: SingleStack
   ports:
   - name: http
-    port: 600
+    port: 800
     protocol: TCP
     targetPort: 30
   selector:
